@@ -10,7 +10,5 @@
 # send the email to this address
 #PBS -M jbs5686@psu.edu
 
-module load r/3.4
-cd $PBS_O_WORKDIR
-R --no-save --no-restore < R.in > R.out
-Rscript TERGM_updated2.R
+module load python
+python reddit_CNN.py
